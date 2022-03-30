@@ -1,0 +1,54 @@
+<ion-grid>
+  <ion-row>
+    <ion-col size="12" size-sm>
+      <ion-card style="background-color: #FFB25A;">
+        <ion-card-header>
+          <ion-card-subtitle>Affected</ion-card-subtitle>
+        </ion-card-header>
+        <ion-card-content class="ion-text-end">
+          <h2>{{info?.cases | number}}</h2>
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+    <ion-col size="6" size-sm>
+      <ion-card style="background-color: #FF5958;">
+        <ion-card-header>
+          <ion-card-subtitle>Death</ion-card-subtitle>
+        </ion-card-header>
+        <ion-card-content class="ion-text-end">
+          <h2>{{info?.deaths | number}}</h2>
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+    <ion-col size="6" size-sm>
+      <ion-card style="background-color: #4CD97A;">
+        <ion-card-header>
+          <ion-card-subtitle>Recovered</ion-card-subtitle>
+        </ion-card-header>
+        <ion-card-content class="ion-text-end">
+          <h2>{{info?.recovered | number}}</h2>
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+    <ion-col size="6" size-sm>
+      <ion-card style="background-color: #4DB5FF;">
+        <ion-card-header>
+          <ion-card-subtitle>Active</ion-card-subtitle>
+        </ion-card-header>
+        <ion-card-content class="ion-text-end">
+          <h2>{{info?.active | number}}</h2>
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+    <ion-col size="6" size-sm>
+      <ion-card style="background-color: #37BAB2;">
+        <ion-card-header>
+          <ion-card-subtitle>Serious</ion-card-subtitle>
+        </ion-card-header>
+        <ion-card-content class="ion-text-end">
+          <h2>{{info?.critical | number}}</h2>
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+</ion-grid>

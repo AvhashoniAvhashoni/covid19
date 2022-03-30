@@ -1,0 +1,21 @@
+<ion-grid>
+  <ion-row>
+    <ion-col>
+      <ion-searchbar [(ngModel)]="search_country" autocomplete="off" color="light"></ion-searchbar>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+
+<ion-list *ngFor="let country of countries | filter:search_country">
+  <ion-item>
+    <ion-label>
+      <h1>{{country.country}}</h1>
+      <p>
+        Cases: {{country.cases | number}} | Today: {{country.todayCases | number}} | Active: {{country.active |
+        number}}<br>
+        Deaths: {{country.deaths | number}} | Today: {{country.todayDeaths | number}}<br>
+        Recovered: {{country.recovered | number}} | Critical {{country.critical | number}}
+      </p>
+    </ion-label>
+  </ion-item>
+</ion-list>

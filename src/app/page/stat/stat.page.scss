@@ -1,0 +1,30 @@
+ion-content {
+    --ion-background-color: #279F99;
+    --color               : #fff;
+
+    h6 {
+        margin-top: 0;
+    }
+
+    h2 {
+        margin-bottom: 5px;
+        font-weight: 600;
+    }
+
+    .segment {
+        background-color: rgba(255, 255, 255, 0.30);
+        margin          : 0 10px;
+        border-radius   : 50px;
+
+        ion-col {
+            margin : 3px;
+            padding: 5px 0;
+        }
+
+        ion-col.active {
+            background-color: #fff;
+            color           : #707070;
+            border-radius   : 50px;
+        }
+    }
+}

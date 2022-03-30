@@ -1,0 +1,28 @@
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <h2>
+          Covid-19
+        </h2>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <h6>
+          Statistics
+        </h6>
+      </ion-col>
+    </ion-row>
+    <ion-row class="segment ion-text-center">
+      <ion-col [ngClass]="{'active': filter === 'global'}" (click)="filter = 'global'">
+        Global
+      </ion-col>
+      <ion-col [ngClass]="{'active': filter === 'country'}" (click)="filter = 'country'">
+        Country
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <app-global *ngIf="filter == 'global'"></app-global>
+  <app-country *ngIf="filter == 'country'"></app-country>
+</ion-content>
